@@ -7,9 +7,3 @@ body {
   font-family: var(--font-family-default);
 
 }
-
-a {
-
-  color: var(--color-secondary);
-
-}
