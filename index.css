@@ -4,4 +4,12 @@ body {
 
   background-color: var(--color-neutral-0);
 
+  font-family: var(--font-family-default);
+
+}
+
+a {
+
+  color: var(--color-secondary);
+
 }

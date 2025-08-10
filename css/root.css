@@ -33,6 +33,11 @@
    */
   --color-secondary: rgb(32, 163, 108);
 
+  /*
+   * Typography.
+   */
+  --font-family-default: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+
 }
 
 * {
