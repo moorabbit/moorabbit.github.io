@@ -34,9 +34,24 @@
   --color-secondary: rgb(32, 163, 108);
 
   /*
+   * Layout sizes.
+   */
+  --navbar-height: 3.75rem;
+
+  --border-width-0: 1px;
+
+  --border-radius-0: 3px;
+
+  --padding-0: 1rem;
+
+  /*
    * Typography.
    */
   --font-family-default: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+
+  --font-size-0: 0.75rem;
+
+  --letter-spacing-0: 0.08em;
 
 }
 
