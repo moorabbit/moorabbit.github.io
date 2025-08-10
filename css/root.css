@@ -77,3 +77,17 @@ a {
   color: var(--color-secondary);
 
 }
+
+button {
+
+  color: var(--color-secondary);
+
+  text-decoration: underline;
+
+}
+
+button:hover {
+
+  cursor: pointer;
+
+}

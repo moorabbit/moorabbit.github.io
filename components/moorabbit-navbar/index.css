@@ -40,8 +40,6 @@ nav div a {
 
 nav div button {
 
-  color: var(--color-secondary);
-
   background-color: var(--color-primary-background);
 
   border-width: var(--border-width-0);
@@ -58,8 +56,6 @@ nav div button {
 
   text-transform: uppercase;
 
-  text-decoration: underline;
-
   font-size: var(--font-size-0);
 
   letter-spacing: var(--letter-spacing-0);
@@ -69,7 +65,5 @@ nav div button {
 nav div button:hover {
 
   background-color: var(--color-primary-background-hover);
-
-  cursor: pointer;
 
 }
