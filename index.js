@@ -1,7 +1,7 @@
-import { kDefineMoorabbitNavBar } from "/components/moorabbit-navbar/index.js";
+import { defineMoorabbitNavBar } from "/components/moorabbit-navbar/index.js";
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  kDefineMoorabbitNavBar();
+  defineMoorabbitNavBar();
 
 });

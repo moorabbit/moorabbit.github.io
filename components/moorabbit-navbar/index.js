@@ -2,7 +2,7 @@ import { HTMLTemplatedElement } from "/js/root.js";
 
 const kComponentTemplateURL = import.meta.resolve("./template.html");
 
-class kMoorabbitNavBar extends HTMLTemplatedElement {
+class MoorabbitNavBar extends HTMLTemplatedElement {
 
   constructor() {
 
@@ -12,14 +12,14 @@ class kMoorabbitNavBar extends HTMLTemplatedElement {
 
 };
 
-const kDefineMoorabbitNavBar = () => {
+const defineMoorabbitNavBar = () => {
 
-  customElements.define("moorabbit-navbar", kMoorabbitNavBar);
+  customElements.define("moorabbit-navbar", MoorabbitNavBar);
 
 };
 
 export {
 
-  kDefineMoorabbitNavBar
+ defineMoorabbitNavBar
 
 };
