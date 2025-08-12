@@ -1,6 +1,6 @@
 const kDOMParser = new DOMParser();
 
-const HTMLTemplatedElement = class extends HTMLElement {
+class HTMLTemplatedElement extends HTMLElement {
 
   constructor(componentTemplatesURL) {
 

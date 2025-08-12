@@ -2,7 +2,7 @@ import { HTMLTemplatedElement } from "/js/root.js";
 
 const kComponentTemplateURL = import.meta.resolve("./template.html");
 
-const kMoorabbitNavBar = class extends HTMLTemplatedElement {
+class kMoorabbitNavBar extends HTMLTemplatedElement {
 
   constructor() {
 
