@@ -6,7 +6,7 @@ const kMoorabbitNavBar = class extends HTMLTemplatedElement {
 
   constructor() {
 
-    super(/* componentTemplateURL */kComponentTemplateURL);
+    super(/* componentTemplatesURL */kComponentTemplateURL);
 
   }
 

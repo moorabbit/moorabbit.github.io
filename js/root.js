@@ -2,13 +2,13 @@ const kDOMParser = new DOMParser();
 
 const HTMLTemplatedElement = class extends HTMLElement {
 
-  constructor(componentTemplateURL) {
+  constructor(componentTemplatesURL) {
 
     super();
 
     (async () => {
 
-      await fetch(componentTemplateURL)
+      await fetch(componentTemplatesURL)
       .then((res) => res.text())
       .then((html) => kDOMParser.parseFromString(html, "text/html"))
       .then((doc) => doc.querySelector("template").content)
