@@ -7,3 +7,81 @@ body {
   font-family: var(--font-family-default);
 
 }
+
+nav {
+
+  height: 3.75rem;
+
+  border-bottom-style: solid;
+
+  border-bottom-width: var(--border-width-0);
+
+  border-bottom-color: var(--color-neutral-3);
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  nav-container {
+
+    display: block;
+
+    height: 50%;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    a {
+
+      color: var(--color-primary);
+
+      text-decoration: none;
+
+      display: flex;
+
+      align-items: center;
+
+    }
+
+    button {
+
+      color: var(--color-primary);
+
+      background-color: var(--color-primary-background);
+
+      border-style: solid;
+
+      border-width: var(--border-width-0);
+
+      border-color: var(--color-primary-border);
+
+      border-radius: var(--border-radius-0);
+
+      padding-left: var(--padding-0);
+
+      padding-right: var(--padding-0);
+
+      text-transform: uppercase;
+
+      font-size: var(--font-size-uppercase);
+
+      letter-spacing: var(--letter-spacing-uppercase);
+
+    }
+
+    button:hover {
+
+      cursor: pointer;
+
+      background-color: var(--color-primary-background-hover);
+
+    }
+
+  }
+
+}
