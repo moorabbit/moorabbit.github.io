@@ -76,6 +76,28 @@
 
   --color-danger-background-hover: rgba(251, 110, 136, 0.15);
 
+  /*
+   * Border widths.
+   */
+  --border-width-0: 1px;
+
+  /*
+   * Border radii.
+   */
+  --border-radius-0: 4px;
+
+  /*
+   * Spacing.
+   */
+  --padding-0: 0.75rem;
+
+  /*
+   * Typography.
+   */
+  --font-size-uppercase: 0.75rem;
+
+  --letter-spacing-uppercase: 0.05rem;
+
 }
 
 * {
