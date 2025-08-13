@@ -7,6 +7,34 @@
  *   - The default styles applied to all HTML elements of the website.
  */
 
+@font-face {
+
+  font-family: "Inter";
+
+  src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("TrueType");
+
+  font-optical-sizing: auto;
+
+  font-weight: 100 900;
+
+  font-style: normal;
+
+}
+
+@font-face {
+
+  font-family: "Inter";
+
+  src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("TrueType");
+
+  font-optical-sizing: auto;
+
+  font-weight: 100 900;
+
+  font-style: normal;
+
+}
+
 :root {
 
   /*
