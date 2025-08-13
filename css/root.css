@@ -7,34 +7,6 @@
  *   - The default styles applied to all HTML elements of the website.
  */
 
-@font-face {
-
-  font-family: "Inter";
-
-  src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("TrueType");
-
-  font-optical-sizing: auto;
-
-  font-weight: 100 900;
-
-  font-style: normal;
-
-}
-
-@font-face {
-
-  font-family: "Inter";
-
-  src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("TrueType");
-
-  font-optical-sizing: auto;
-
-  font-weight: 100 900;
-
-  font-style: normal;
-
-}
-
 :root {
 
   /*
@@ -43,45 +15,43 @@
    * The grays, blacks, whites for text and background.
    */
   --color-neutral-0: rgb(8, 15, 17);
-
   --color-neutral-1: rgb(16, 22, 24);
-
-  --color-neutral-2: rgb(20, 27, 29);
-
-  --color-neutral-3: rgb(28, 34, 37);
-
-  --color-neutral-4: rgb(161, 164, 165);
-
-  --color-neutral-5: rgb(215, 216, 217);
+  --color-neutral-2: rgb(28, 34, 37);
+  --color-neutral-3: rgb(161, 164, 165);
+  --color-neutral-4: rgb(215, 216, 217);
 
   /*
    * Primary colors.
    */
   --color-primary: rgb(7, 213, 151);
-
   --color-primary-background: rgb(22, 35, 34);
-
-  --color-primary-background-hover: rgb(7, 213, 151, 0.15);
-
+  --color-primary-background-hover: rgb(28, 55, 46);
   --color-primary-border: rgba(7, 213, 151, 0.15);
 
   /*
    * Secondary colors.
    */
-  --color-accent: rgb(32, 163, 108);
+  --color-secondary: rgb(32, 163, 108);
 
-  --color-danger: rgb(251, 110, 136);
+  /*
+   * Layout sizes.
+   */
+  --navbar-height: 3.75rem;
 
-  --color-danger-background: rgb(35, 21, 23);
+  --border-width-0: 1px;
 
-  --color-danger-border: rgba(251, 110, 136, 0.15);
+  --border-radius-0: 3px;
 
-  --color-danger-background-hover: rgba(251, 110, 136, 0.15);
+  --padding-0: 1rem;
 
   /*
    * Typography.
    */
-  --font-family-inter: "Inter";
+  --font-family-default: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+
+  --font-size-0: 0.75rem;
+
+  --letter-spacing-0: 0.08em;
 
 }
 
