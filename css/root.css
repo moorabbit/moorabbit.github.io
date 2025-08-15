@@ -38,23 +38,27 @@
 :root {
 
   /*
-   * Neutral colors.
-   *
-   * The grays, blacks, whites for text and background.
+   * Colors.
    */
+
   --color-neutral-0: rgb(8, 15, 17);
 
   --color-neutral-1: rgb(16, 22, 24);
 
-  --color-neutral-2: rgb(28, 34, 37);
+  --color-neutral-2: rgb(20, 27, 29);
 
-  --color-neutral-3: rgb(161, 164, 165);
+  --color-neutral-3: rgb(28, 34, 37);
 
-  --color-neutral-4: rgb(215, 216, 217);
+  --color-neutral-4: rgb(45, 51, 53);
 
-  /*
-   * Primary colors.
-   */
+  --color-neutral-5: rgb(64, 70, 71);
+
+  --color-neutral-6: rgb(126, 131, 133);
+
+  --color-neutral-7: rgb(161, 164, 165);
+
+  --color-neutral-8: rgb(215, 216, 217);
+
   --color-primary: rgb(7, 213, 151);
 
   --color-primary-background: rgb(22, 35, 34);
@@ -63,30 +67,13 @@
 
   --color-primary-border: rgba(7, 213, 151, 0.15);
 
-  /*
-   * Secondary colors.
-   */
-  --color-secondary: rgb(32, 163, 108);
+  --color-danger: rgb(251, 110, 136);
 
-  /*
-   * Layout sizes.
-   */
-  --navbar-height: 3.75rem;
+  --color-danger-background: rgb(35, 21, 23);
 
-  --border-width-0: 1px;
+  --color-danger-background-hover: rgba(251, 110, 136, 0.15);
 
-  --border-radius-0: 3px;
-
-  --padding-0: 1rem;
-
-  /*
-   * Typography.
-   */
-  --font-family-default: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-
-  --font-size-0: 0.75rem;
-
-  --letter-spacing-0: 0.08em;
+  --color-danger-border: rgba(251, 110, 136, 0.15);
 
 }
 
