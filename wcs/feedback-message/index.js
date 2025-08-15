@@ -1,0 +1,69 @@
+const successCheckMarkSVG = `
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+  <svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>success-filled</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  <g id="add-copy-2" fill="#000000" transform="translate(42.666667, 42.666667)">
+  <path d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51296 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.153707,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51296 331.153707,3.55271368e-14 213.333333,3.55271368e-14 Z M293.669333,137.114453 L323.835947,167.281067 L192,299.66912 L112.916693,220.585813 L143.083307,190.4192 L192,239.335893 L293.669333,137.114453 Z" id="Shape">
+  </path>
+  </g>
+  </g>
+  </svg>
+`;
+const shadowRootTemplate = document.createElement("template");
+
+shadowRootTemplate.innerHTML = `
+  <link rel="stylesheet" href="${import.meta.resolve('./index.css')}">
+
+  <span> ${successCheckMarkSVG} Message sent </span>
+
+  <hr>
+`;
+
+class FeedbackMessage extends HTMLElement {
+
+  constructor() {
+
+    super();
+
+    this.attachShadow({ mode: "open" });
+
+    this.shadowRoot.append(shadowRootTemplate.cloneNode(true).content);
+
+  }
+
+  startCountdown(callback) {
+
+    const kTransitionDurationMs = 4000;
+    const progressBar = this.shadowRoot.querySelector("hr");
+    progressBar.style.transitionDuration = kTransitionDurationMs + "ms";
+
+    setTimeout(() => {
+
+      this.style.visibility = "visible";
+
+      progressBar.style.transform = "scaleX(0)";
+
+    }, 10);
+
+    setTimeout(() => {
+
+      this.style.visibility = "hidden";
+
+      callback();
+
+      progressBar.style.transform = "scaleX(1)";
+
+    }, kTransitionDurationMs);
+
+  }
+
+}
+
+export const defineFeedbackMessageWebComponent = () => {
+
+  customElements.define("wc-feedback-message", FeedbackMessage);
+
+};
+

@@ -1,0 +1,67 @@
+@import "/css/root.css";
+
+:host {
+
+  visibility: hidden;
+
+  position: fixed;
+
+  bottom: 1rem;
+
+  right: 1rem;
+
+  background-color: var(--color-neutral-1);
+
+  border-radius: 4px;
+
+  color: var(--color-neutral-7);
+
+  font-family: "Inter";
+
+  font-size: 0.75rem;
+
+}
+
+span {
+
+  display: flex;
+
+  gap: 0.25rem;
+
+  align-items: center;
+
+  padding: 0.75rem;
+
+}
+
+svg {
+
+  width: 0.75rem;
+
+  height: 0.75rem;
+
+  path {
+
+    fill: var(--color-primary);
+
+  }
+
+}
+
+hr {
+
+  margin: 0;
+
+  border: none;
+
+  height: 1px;
+
+  background-color: var(--color-primary);
+
+  transform: scaleX(1);
+
+  transform-origin: left center;
+
+  transition: transform linear;
+
+}

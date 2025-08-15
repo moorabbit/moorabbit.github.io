@@ -24,13 +24,14 @@ class NavBar extends HTMLElement {
 
     this.contactButton = this.shadowRoot.querySelector("button");
 
-    console.log(this.contactButton);
-
     this.contactButton.addEventListener("click", () => {
 
       const blurOverlay = document.querySelector("wc-blur-overlay");
 
+      const contactForm = document.querySelector("wc-contact-form");
+
       blurOverlay.show();
+      contactForm.show();
 
     });
 

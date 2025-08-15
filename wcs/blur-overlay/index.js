@@ -14,12 +14,6 @@ class BlurOverlay extends HTMLElement {
 
     this.shadowRoot.append(shadowRootTemplate.cloneNode(true).content);
 
-    this.addEventListener("click", () => {
-
-      this.hide();
-
-    });
-
   }
 
   hide() {
