@@ -1,3 +1,9 @@
+const shadowRootTemplate = document.createElement("template");
+
+shadowRootTemplate.innerHTML = `
+  <link rel="stylesheet" href="${import.meta.resolve('./index.css')}">
+`;
+
 class BlurOverlay extends HTMLElement {
 
   constructor() {
@@ -6,11 +12,13 @@ class BlurOverlay extends HTMLElement {
 
     this.attachShadow({ mode: "open" });
 
-    const CSSLink = document.createElement("link");
-    CSSLink.rel = "stylesheet";
-    CSSLink.href = import.meta.resolve("./index.css");
+    this.shadowRoot.append(shadowRootTemplate.cloneNode(true).content);
 
-    this.shadowRoot.append(CSSLink);
+    this.addEventListener("click", () => {
+
+      this.hide();
+
+    });
 
   }
 
@@ -22,7 +30,7 @@ class BlurOverlay extends HTMLElement {
 
   show() {
 
-    this.style.visibility = "visibile";
+    this.style.visibility = "visible";
 
   }
 

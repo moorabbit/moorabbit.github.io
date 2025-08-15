@@ -1,0 +1,79 @@
+@import "/css/root.css";
+
+:host {
+
+  height: 3.75rem;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  border-bottom-width: 1px;
+
+  border-bottom-style: solid;
+
+  border-bottom-color: var(--color-neutral-3);
+
+}
+
+nav {
+
+  height: 50%;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-around;
+
+}
+
+a {
+
+  display: flex;
+
+  align-items: center;
+
+  font-family: "Inter";
+
+  color: var(--color-primary);
+
+  text-decoration: none;
+
+}
+
+button {
+
+  padding-left: 0.75rem;
+
+  padding-right: 0.75rem;
+
+  border-width: 1px;
+
+  border-style: solid;
+
+  border-color: var(--color-primary-border);
+
+  border-radius: 4px;
+
+  color: var(--color-primary);
+
+  background-color: var(--color-primary-background);
+
+  font-family: "Inter";
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  &:hover {
+
+    background-color: var(--color-primary-background-hover);
+
+    cursor: pointer;
+
+  }
+
+}
