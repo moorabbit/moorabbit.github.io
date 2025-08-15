@@ -43,17 +43,24 @@
    * The grays, blacks, whites for text and background.
    */
   --color-neutral-0: rgb(8, 15, 17);
+
   --color-neutral-1: rgb(16, 22, 24);
+
   --color-neutral-2: rgb(28, 34, 37);
+
   --color-neutral-3: rgb(161, 164, 165);
+
   --color-neutral-4: rgb(215, 216, 217);
 
   /*
    * Primary colors.
    */
   --color-primary: rgb(7, 213, 151);
+
   --color-primary-background: rgb(22, 35, 34);
+
   --color-primary-background-hover: rgb(28, 55, 46);
+
   --color-primary-border: rgba(7, 213, 151, 0.15);
 
   /*
