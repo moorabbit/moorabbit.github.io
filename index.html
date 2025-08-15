@@ -19,6 +19,22 @@
 
   <body>
 
+    <wc-blur-overlay></wc-blur-overlay-element>
+
+    <div class="success-message">
+
+      <div class="message">
+
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z"/></svg>
+
+          Your message has successfully been sent.
+      </div>
+
+      <div id="feedback-progress">
+      </div>
+
+    </div>
+
     <nav>
 
       <nav-container>
@@ -30,6 +46,74 @@
       </nav-container>
 
     </nav>
+
+    <div class="contact-section-container">
+
+      <div class="grid-col-2">
+
+        <div class="input-label-container">
+
+          <label for="name"> Your name </label>
+
+          <input
+            class="input-primary"
+            id="name"
+            type="text"
+            placeholder="Anas Chrifi"
+          >
+
+        </div>
+
+        <div class="input-label-container">
+
+          <label for="email"> Your email </label>
+
+          <input
+            class="input-primary"
+            id="email"
+            type="text"
+            placeholder="anas@chrifi.org"
+          >
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="input-label-container">
+
+        <label for="message"> Your message </label>
+
+        <textarea
+          id="message"
+          placeholder="What would you like to share with me?"
+          rows=6
+        ></textarea>
+
+      </div>
+
+      <hr>
+
+
+      <div class="footer">
+
+        <div class="contact-me-message">
+          Contact me directly at
+          <a href="mailto:moorabbit@proton.me">moorabbit@proton.me</a> 
+        </div>
+
+        <div class="submit-close-buttons">
+
+          <button class="primary"> Submit </button>
+
+          <button class="danger"> Close </button>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 

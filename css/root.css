@@ -50,9 +50,16 @@
 
   --color-neutral-3: rgb(28, 34, 37);
 
-  --color-neutral-4: rgb(161, 164, 165);
+  --color-neutral-4: rgb(45, 51, 53);
 
-  --color-neutral-5: rgb(215, 216, 217);
+  --color-neutral-5: rgb(161, 164, 165);
+
+  --color-neutral-6: rgb(215, 216, 217);
+
+  --color-neutral-7: rgb(64, 70, 71);
+
+  --color-neutral-8: rgb(126, 131, 133);
+
 
   /*
    * Primary colors.
@@ -76,27 +83,44 @@
 
   --color-danger-background-hover: rgba(251, 110, 136, 0.15);
 
+  --color-danger-border: rgba(251, 110, 136, 0.15);
+
   /*
-   * Border widths.
+   * Border/Outline widths.
    */
   --border-width-0: 1px;
+
+  --outline-width-0: 1px;
 
   /*
    * Border radii.
    */
   --border-radius-0: 4px;
 
+  --border-radius-1: 8px;
+
   /*
    * Spacing.
    */
   --padding-0: 0.75rem;
+
+  --padding-1: 1rem;
+
+  --margin-0: 0.5rem;
 
   /*
    * Typography.
    */
   --font-size-uppercase: 0.75rem;
 
+  --font-size-input-label: 0.85rem;
+
   --letter-spacing-uppercase: 0.05rem;
+
+  /*
+   * Visual Effects.
+   */
+  --blur-0: blur(4px);
 
 }
 
@@ -120,5 +144,13 @@
   font-weight: normal;
 
   font-style: normal;
+
+}
+
+*::selection {
+
+  background-color: var(--color-primary);
+
+  color: var(--color-neutral-0);
 
 }
